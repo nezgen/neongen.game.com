@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href=
+"https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity=
+"sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+        crossorigin="anonymous">
+    
+        
+        <style>
+            .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20;}
+ 
+h2 {
+  text-align: center;
+}
+form {
+            background-color: #dfdfed;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin-top: 200PX;
+        }
+        body {
+        /* This sets the background image */
+        background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20230408/pngtree-rainbow-curves-abstract-colorful-background-image_2164067.jpg');
+        /* You can specify how the background image should be displayed */
+        background-size: cover; /* or 'contain' depending on your preference */
+        /* Optionally, you can specify the background color in case the image doesn't cover the whole screen */
+        background-color: #f0f0f0; /* This color will show if the image doesn't cover the entire screen */
+    }
+  </style>
+       <script src="captcha.js"></script>
+        
+</head>
+<body>
+  <foRM class="center">
+        <h2 >GENDER   </h2>
+        <DIV ALIGN="center">
+        <label for="fname">MALE:</label>
+        <input type="checkbox" id="fname" name="fname">
+        <label for="name">FEMALE:</label>
+        <input type="checkbox" id="name" name="name" >
+        </DIV>
+          <h2>DOB</h2>
+        <input type="month" placeholder="DOB" class="center" name="DOB" required><br>
+        <div id="user-input" class="inline">
+          <input type="text"
+                 id="submit"
+                 placeholder="Captcha code" />
+      </div>
+   
+      <div class="inline" onclick="generate()">
+          <i class="fas fa-sync"></i>
+      </div>
+   
+      <div id="image"
+           class="inline"
+           selectable="False">
+      </div>
+      <input type="submit"
+             id="btn"
+             onclick="printmsg()" />
+   
+      <p id="key"></p>
+    
+  
+
+        
+    
+  </foRM>
+  <a href="MAINPAGE.HRML.html"><BUtton>ENTER</BUtton></a>
+  
+    
+</body>
+</html>
